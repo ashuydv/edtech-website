@@ -1,0 +1,516 @@
+@import url(/src/utilities.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* navbar-start */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.2);
+    padding: .5rem;
+    position: sticky;
+}
+
+.navbar:hover {
+    background: #f2f2f2;
+    box-shadow: 1px 1px 10px 1px #777;
+}
+
+.navbar-right li {
+    padding-left: 1rem;
+}
+
+.navbar-right li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn:hover {
+    color: #FF9900;
+}
+
+.contact {
+    background-color: #FF9900;
+    color: #fff!important;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    font-weight: bold;
+    box-shadow: -2px -2px 5px 5px #fff, 2px 2px 5px 3px #111111;
+}
+
+.contact:hover,
+.contact:active {
+    background-color: #fff;
+    color: #FF9900!important;
+    border: 1px solid #FF9900;
+    font-weight: bold;
+    box-shadow: -2px -2px 5px 3px #fff, 2px 2px 5px 3px #111111;
+}
+
+.fa-moon {
+    padding: .5rem;
+    border-radius: 50%;
+    background: #f5f5f5;
+    box-shadow: -3px -3px 5px 2px #Fff, 3px 3px 5px 3px #111111;
+}
+
+
+/* navbar-end */
+
+
+/* home-start */
+
+.home {
+    width: 100%;
+    background: #f1f1f1;
+}
+
+.home img {
+    width: 100%;
+}
+
+.home video {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    margin: 1rem;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+    color: black;
+    background: #FF9900;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.fa-chevron-right:hover,
+.fa-chevron-left:hover {
+    color: black;
+    background: #FF9900;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px 3px #111111;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: .75;
+}
+
+.carousel-indicators {
+    background: #f5f5f5;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    box-shadow: -1px -1px 1px 1px #777, 1px 1px 1px 1px #555;
+}
+
+.carousel-indicators li {
+    background-color: #111111;
+}
+
+.carousel-indicators li:hover,
+.active {
+    background-color: #FF9900!important;
+}
+
+.fa-comments:before {
+    content: "\f086";
+    color: #FF9900;
+    font-size: 4rem;
+    position: sticky;
+    top: 90%;
+    left: 90%;
+    z-index: 17;
+}
+
+.carousel-inner {
+    width: 100%;
+}
+
+
+/* about-start */
+
+.about {
+    background: #fff;
+}
+
+.about .jumbotron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1;
+    background: transparent!important;
+}
+
+.about .jumbotron .head {
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.about .jumbotron .head span {
+    color: #FF9900;
+    margin-bottom: 2rem;
+}
+
+.about .jumbotron .body {
+    width: 250px;
+    height: 250px;
+    box-shadow: -2px -2px 5px #000, 2px 2px 5px #000;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+
+.about .jumbotron .body .overlay {
+    background: #FF9900;
+    opacity: 0;
+    height: 260px;
+    position: absolute;
+    top: 64.75rem;
+    left: 39.25rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 260px;
+    transition: .5s ease;
+    border: 1px solid;
+}
+
+.about .jumbotron .body img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 5px #f5f5f5;
+}
+
+.about .jumbotron .body:hover .overlay {
+    background: #FF9900;
+    opacity: .95;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 2;
+}
+
+.about .footer {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 1px 1px 5px 3px #FF9900;
+}
+
+.man-1 {
+    position: absolute;
+    width: 10%;
+    margin-top: 25%;
+    margin-left: 70%;
+}
+
+
+/* about-end */
+
+
+/* blogs-start */
+
+.blogs {
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.blogs h1 {
+    margin-bottom: 1rem;
+}
+
+.blogs h1 span {
+    color: #FF9900;
+}
+
+.cards {
+    display: flex;
+    padding: 1rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1rem;
+    width: 50%;
+    border-radius: 1rem;
+    border: 2px solid #ff9900;
+    transition: .5s;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-body .btn,
+.tips .btn {
+    border: 1px solid #FF9900;
+    color: black;
+    border-radius: .5rem;
+    transition: .2s;
+}
+
+.card-body .btn:hover {
+    background: #FF9900;
+    color: white;
+    box-shadow: 2px 2px 2px black;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 5px #000;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+}
+
+.man-2 {
+    position: absolute;
+    width: 11%;
+    margin-top: 24rem;
+    left: 87px;
+    z-index: 1;
+}
+
+.tips {
+    background-color: #Fff;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.tips h1 {
+    margin-bottom: 2rem;
+}
+
+.tips span {
+    color: #FF9900;
+}
+
+.tips .container {
+    display: flex;
+}
+
+.tips .column {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 1rem;
+    height: 659px;
+    overflow-y: scroll;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 6px 1px #333;
+}
+
+.column::-webkit-scrollbar {
+    display: none;
+}
+
+.column h3 {
+    background: linear-gradient(transparent, #ff9900b0);
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 1px 1px 6px 1px #333;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.tips .row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.tips .card {
+    width: 90%;
+    height: 50%;
+    padding: 1rem;
+}
+
+.tips .card .btn {
+    width: fit-content;
+    transition: .2s;
+    margin: 0;
+}
+
+.tips .column .btn-default {
+    margin: 1rem auto;
+    margin-left: -12rem;
+}
+
+.tips .column .btn:hover {
+    color: #fff;
+    background: #ff9900;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    overflow: hidden;
+}
+
+
+/* footer */
+
+.footer {
+    background: lightgoldenrodyellow;
+    margin-top: 3rem;
+}
+
+.footer .jumbotron {
+    background: transparent;
+}
+
+.footer .head {
+    text-align: center;
+}
+
+.footer span {
+    color: #FF9900;
+}
+
+.footer .body {
+    padding: 1rem;
+    width: 50%;
+}
+
+.footer .jumbotron {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+.footer .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    border: none;
+    background: transparent;
+    outline: none;
+    background-clip: padding-box;
+    border-bottom: 1px solid #111;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:hover {
+    background: transparent;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+.footer .btn {
+    color: #ff9900;
+    background-color: #fff;
+    border: 1px solid #FF9900;
+    font-weight: bold;
+}
+
+.footer .btn:hover {
+    color: #fff;
+    background: #ff9900;
+}
+
+.footer .img {
+    display: flex;
+}
+
+.footer .img ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .img li {
+    color: #111;
+    padding: 1rem;
+    margin: .5rem;
+    font-size: 1.2rem;
+}
+
+.img li .fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.img li .fa-instagram:hover {
+    color: #8a3ab9;
+}
+
+.img li .fa-facebook:hover {
+    color: #4267B2;
+}
+
+.img li .fa-linkedin:hover {
+    color: #0e76a8;
+}
+
+.img li .fa-reddit:hover {
+    color: #FF5700;
+}
+
+.footer .jumbotron {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0rem;
+    margin-bottom: auto;
+}
