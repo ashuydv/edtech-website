@@ -5,36 +5,32 @@
     box-sizing: border-box;
 }
 
+body {
+    border: 1px solid red;
+}
+
 
 /* navbar-start */
 
-.navbar {
+nav {
     background: rgba(255, 255, 255, 0.2);
     padding: .5rem;
+    width: 100%;
     position: sticky;
-}
-
-.navbar:hover {
-    background: #f2f2f2;
-    box-shadow: 1px 1px 10px 1px #777;
-}
-
-.navbar-right li {
-    padding-left: 1rem;
-}
-
-.navbar-right li a {
-    text-decoration: none;
-    color: #000;
+    border: 1px solid black;
 }
 
 .btn:hover {
     color: #FF9900;
 }
 
+.nav-link:hover {
+    color: #ff9900 !important;
+}
+
 .contact {
     background-color: #FF9900;
-    color: #fff!important;
+    color: #fff !important;
     border-radius: 2rem;
     display: flex;
     align-items: center;
@@ -47,7 +43,7 @@
 .contact:hover,
 .contact:active {
     background-color: #fff;
-    color: #FF9900!important;
+    color: #FF9900 !important;
     border: 1px solid #FF9900;
     font-weight: bold;
     box-shadow: -2px -2px 5px 3px #fff, 2px 2px 5px 3px #111111;
@@ -124,7 +120,7 @@
 
 .carousel-indicators li:hover,
 .active {
-    background-color: #FF9900!important;
+    background-color: #FF9900 !important;
 }
 
 .fa-comments:before {
@@ -154,7 +150,7 @@
     align-items: center;
     flex-direction: column;
     line-height: 1;
-    background: transparent!important;
+    background: transparent !important;
 }
 
 .about .jumbotron .head {
@@ -514,3 +510,140 @@ input[type=radio] {
     padding-bottom: 0rem;
     margin-bottom: auto;
 }
+
+
+/* footer end */
+
+
+/*    Responsiveness   */
+
+@media (max-width: 480px) {
+    .container-fluid {
+        width: 100%;
+    }
+    body {
+        width: 100vw;
+    }
+    .carousel-item {
+        margin: 0!important;
+    }
+    .tips .column {
+        width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 6px 1px #333;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+    .tips .column {
+        width: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 6px 1px #333;
+    }
+    .card {
+        margin: 1rem;
+        width: 100%;
+        border-radius: 1rem;
+        border: 2px solid #ff9900;
+        transition: .5s;
+    }
+    .about .jumbotron .body .overlay {
+        display: none;
+    }
+    .footer .img li {
+        color: #111;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    .man-1,
+    .man-2 {
+        display: none;
+    }
+    .carousel-indicators {
+        margin: auto;
+        position: absolute;
+        bottom: 0rem;
+        padding: 0rem;
+        background: transparent;
+        width: 100%;
+        top: 110%;
+        box-shadow: none;
+    }
+    .fa-chevron-right,
+    .fa-chevron-left {
+        color: black;
+        background: #FF9900;
+        border-radius: 50%;
+        padding: .5rem;
+        font-size: .5rem;
+    }
+}
+
+
+/*
+@media (min-width: 480px) {
+    nav {
+        width: 100%;
+        border: 1px solid black;
+    }
+    nav .fa-chevron-right,
+    .fa-chevron-left {
+        color: black;
+        background: transparent!important;
+    }
+    nav .fa-chevron-right:hover,
+    .fa-chevron-left:hover {
+        color: black;
+        background: #FF9900;
+        padding: 0rem;
+        border-radius: 50%;
+        box-shadow: 3px 3px 5px 3px #111111;
+    }
+    nav .carousel-control-prev,
+    nav .carousel-control-next {
+        opacity: .75;
+    }
+    .carousel-indicators {
+        background: #f5f5f5;
+        padding: 0rem;
+        margin: auto;
+        margin-top: 2rem;
+        position: absolute;
+        bottom: 0rem;
+        width: 100%;
+        box-shadow: -1px -1px 1px 1px #777, 1px 1px 1px 1px #555;
+    }
+    .carousel-indicators li {
+        background-color: #111111;
+    }
+    .carousel-indicators li:hover,
+    .active {
+        background-color: #FF9900 !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+
+*/
