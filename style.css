@@ -20,6 +20,70 @@
     box-sizing: border-box;
 }
 
+
+/* Chatbot */
+
+.chat_icon {
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    font-size: 80px;
+    z-index: 1000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chat_box {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    width: 400px;
+    height: 75vh;
+    background: #dedede;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+}
+
+.chat_box.active {
+    transform: scaleY(1);
+}
+
+#messages {
+    position: fixed;
+    right: 5px;
+    left: 5px;
+    bottom: 5px;
+    height: 50px;
+    border-radius: .5rem;
+    background: #fff!important;
+    z-index: 1200;
+    transition: all 0.3s ease-out;
+}
+
+.fa-caret-square-right:before {
+    content: "\f152";
+    position: fixed;
+    font-size: 50px;
+    color: #FF9000;
+    bottom: 5px;
+    cursor: pointer;
+    right: 15px;
+}
+
+#msg {
+    width: 80%;
+    border: none;
+    height: 45px;
+    padding: 2px 5px;
+    border-radius: 6px;
+    margin: 1px;
+}
+
+#msg:focus {
+    outline: none;
+}
+
 body.dark-theme {
     --btn--bg-color: #ff9900;
     --btn-text-color: #fff;
@@ -391,7 +455,7 @@ nav {
     justify-content: space-evenly;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: var(--carousel-indicators-li);
+    background-color: var(--bg-light);
     margin: 1rem;
     height: 659px;
     overflow-y: scroll;
@@ -404,12 +468,11 @@ nav {
 }
 
 .column h3 {
-    background: linear-gradient(var(--carousel-indicators-li), var(--btn--bg-color));
+    background: var(--btn--bg-color);
     width: 100%;
     padding: 1rem;
     box-shadow: 1px 1px 6px 1px #333;
     border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
 }
 
 .tips .row {
@@ -455,9 +518,9 @@ nav {
 /* footer */
 
 .footer {
-    background: var(--about);
+    background: var(--blogs-bg);
     padding-top: 3rem;
-    color: var(--carousel-indicators-li)
+    color: var( --carousel-indicators-li);
 }
 
 .footer .jumbotron {
@@ -535,10 +598,9 @@ input[type=radio] {
 }
 
 .footer .img li {
-    color: #111;
+    color: var(--btn-text-color);
     padding: 1rem;
     margin: .5rem;
-    font-size: 1.2rem;
 }
 
 .img li .fa-twitter:hover {

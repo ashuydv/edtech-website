@@ -20,3 +20,11 @@
      localStorage.setItem('selected-theme', getCurrentTheme())
      localStorage.setItem('selected-icon', getCurrentIcon())
  })
+
+ /* chatbot */
+
+ $(document).ready(function(event) {
+     $('.chat_icon').click(function(event) {
+         $('.chat_box').toggleClass('active');
+     })
+ })
