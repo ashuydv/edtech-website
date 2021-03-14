@@ -648,6 +648,10 @@ input[type=radio] {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
 
 /* footer end */
 
